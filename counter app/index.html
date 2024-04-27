@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter app</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 2rem;
+
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Javascript Counter App</h2>
+    <div class="container">
+        <p class="display-num" style="font-size: 4rem;"> 0 </p>
+        <div>
+            <button class="increase-btn">+</button>
+            <button class="decrease-btn">-</button>
+        </div>
+    </div>
+
+    <script>
+        const Num = document.querySelector('.display-num')
+        const increaseBtn = document.querySelector('.increase-btn')
+        const decreaseBtn = document.querySelector('.decrease-btn')
+
+        increaseBtn.addEventListener('click', () => {
+            Num.innerHTML = Number(Num.innerHTML) + 1
+        })
+
+        decreaseBtn.addEventListener('click', () => {
+            Num.innerHTML = Number(Num.innerHTML) - 1
+        })
+
+    </script>
+</body>
+
+</html>
