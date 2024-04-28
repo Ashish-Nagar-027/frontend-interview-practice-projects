@@ -25,7 +25,6 @@ function updateTime() {
         secondsFormated = secs < 10 ? `0${secs}` : secs
         minsFormated = mins < 10 ? `0${mins}` : mins
 
-
         timer.innerHTML = `${minsFormated} : ${secondsFormated} : ${millisecondsFormated}`
     }
 }
@@ -34,6 +33,7 @@ function updateTime() {
 function startTimer() {
     pauseTimer = false
     interValId = setInterval(updateTime, 10)
+
 }
 
 

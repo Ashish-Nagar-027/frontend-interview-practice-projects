@@ -9,10 +9,8 @@ body {
     flex-direction: column
 }
 
-.btn_container {
-    
-}
 
 .btn_container button {
  cursor:pointer
 }
+
